@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "DurationFormat Shimmer",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {"id": "a23706c065c2a2c3388dfe7bf198cefd6a168caa@temporary-addon"}
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.tuta.com/*"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "duration-shimmer.js"
+  ]
+}
